@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>seminar-questions</title>
+  </head>
+  <body>
+    <button id="demo">ASK!</button>
+    <script>
+document.getElementById("demo").addEventListener("click", myFunction);
+function myFunction() {
+  var questions = [
+    "are there any connections between your master thesis and engineering project?",
+    "do you imagine making business from your master thesis ideas?",
+    "do you know interesting applications of this construction?",
+    "can you enumerate the protocols that you will use or compare in your master thesis?",
+    "what are your objectives? what do you want to tell us in this thesis?"
+  ];
+  alert(questions[Math.floor(Math.random()*questions.length)]);
+}
+    </script>
+  </body>
+</html>
